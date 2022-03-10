@@ -1,5 +1,5 @@
 from django.db import models
 
-class Lesson(models.model):
+class Lesson(models.Model):
     title = models.DateField()
-    desciption = models.CharField()
+    description = models.TextField()

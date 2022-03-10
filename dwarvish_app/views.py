@@ -10,3 +10,6 @@ def lesson_detail(request, pk):
     lesson = Lesson.objects.get(pk=pk)
     context = {'lesson': lesson}
     return render(request, 'lesson_detail.html', context)
+
+def index(request):
+    return render(request, 'lesson1/index.html', {})
