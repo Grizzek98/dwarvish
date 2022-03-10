@@ -1,5 +1,5 @@
 from django.db import models
 
-class Lesson(models.Model):
-    title = models.DateField()
-    description = models.TextField()
+class Char(models.Model):
+    english = models.CharField(max_length=3)
+    dwarvish = models.CharField(max_length=1)
