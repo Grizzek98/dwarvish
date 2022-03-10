@@ -2,7 +2,7 @@ from django.shortcuts import render
 from dwarvish_app.models import Lesson
 
 def lesson_index(request):
-    lessons = Lesson.all().order_by('-title')
+    lessons = Lesson.objects.all().order_by('-title')
     context = {'lessons': lessons}
     return render(request, 'lesson_index.html', context)
 
