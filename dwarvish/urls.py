@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import routers
+from dwarvish_app import views
+
+all_chars_r = routers.DefaultRouter()
+all_chars_r.register(r'all',views.CharAll, 'all')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('dwarvish_app.urls')),
+    path('api/', include(all_chars_r.urls))
 ]
