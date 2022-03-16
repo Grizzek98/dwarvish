@@ -13,7 +13,7 @@ class CharAll(viewsets.ModelViewSet) :
     serializer_class = serializers.EngCirthSerializer
     queryset = Char.objects.all()
 
-class CharConsOne(viewsets.ModelViewSet) :
+class CharVowels(viewsets.ModelViewSet) :
     serializer_class = serializers.EngCirthSerializer
     queryset = Char.objects.filter(english__in = ('a', 'e', 'i', 'o', 'u'))
 
