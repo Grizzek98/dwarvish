@@ -30,12 +30,30 @@ export default class Quiz extends Component {
                 1: 'D',
                 2: 'C',
                 3: 'Y'
-            }
+            },
+            4: {
+                1: 'D',
+                2: 'W',
+                3: 'A'
+            },
+            5: {
+                1: 'K',
+                2: 'E',
+                3: 'O'
+            },
+            6: {
+                1: 'E',
+                2: 'F',
+                3: 'P'
+            },
         },
         correctAnswers: {
             1: '1',
             2: '3',
-            3: '2'
+            3: '2',
+            4: '1',
+            5: '2',
+            6: '2',
         },
         correctAnswer: 0,
         clickedAnswer: 0,
